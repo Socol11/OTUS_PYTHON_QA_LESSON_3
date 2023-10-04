@@ -22,7 +22,7 @@ def test_square_negative(radius, area, perimeter):
         assert c.get_area() == area
         assert c.get_perimeter() == perimeter
 
-def test_add_area():
+def test_circle_add_area():
     c = Circle(5)
     s = Square(5)
     assert c.add_area(s) == 103.54

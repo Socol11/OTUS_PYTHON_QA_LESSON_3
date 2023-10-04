@@ -24,7 +24,7 @@ def test_square_negative(side, area, perimeter):
         assert r.get_area() == area
         assert r.get_perimeter() == perimeter
 
-def test_add_area():
+def test_square_add_area():
     r = Rectangle(2, 5)
     s = Square(5)
     assert r.add_area(s) == 35

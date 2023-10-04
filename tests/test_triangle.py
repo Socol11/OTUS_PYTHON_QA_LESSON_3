@@ -26,7 +26,7 @@ def test_triangle_negative(side_a, side_b, side_c, area, perimeter):
         assert t.get_perimeter() == perimeter
 
 
-def test_add_area():
+def test_triangle_add_area():
     t = Triangle(2, 5, 6)
     s = Square(5)
     assert t.add_area(s) == 29.68
