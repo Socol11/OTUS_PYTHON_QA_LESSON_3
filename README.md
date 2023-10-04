@@ -1,1 +1,1 @@
-"# otus_python_qa_lesson_3" 
+"# OTUS_PYTHON_QA_LESSON_3" 
