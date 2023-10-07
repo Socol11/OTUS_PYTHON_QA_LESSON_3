@@ -18,18 +18,12 @@ class Triangle(Figure):
 
 
     def get_area(self):
-        # sp = (self.a + self.b + self.c) / 2
+        """The function calculates the area of a triangle"""
         sp = self.get_perimeter() / 2
         area = (sp * (sp - self.a) * (sp - self.b) * (sp - self.c)) ** .5
         return round(area, 2)
 
     def get_perimeter(self):
+        """The function calculates the perimeter of a triangle"""
         perimeter = self.a + self.b + self.c
         return perimeter
-
-
-if __name__ == "__main__":
-    t = Triangle(1000, 10000, 10900)
-    print(t.name)
-    print(t.perimeter)
-    print(t.area)

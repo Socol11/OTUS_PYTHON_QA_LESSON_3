@@ -14,16 +14,9 @@ class Rectangle(Figure):
         self.area = self.get_area()
 
     def get_area(self):
-        return self.side_a * self.side_b
+        """The function calculates the area of a rectangle"""
+        return round(self.side_a * self.side_b, 2)
 
     def get_perimeter(self):
+        """The fincion calculates the perimeter of a rectangle"""
         return 2 * (self.side_a + self.side_b)
-
-
-if __name__ == "__main__":
-    r = Rectangle(10, 20)
-    print(r.name)
-    print(r.perimeter)
-    print(r.area)
-    print(r.get_perimeter())
-    print(r.get_area())

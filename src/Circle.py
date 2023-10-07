@@ -14,16 +14,11 @@ class Circle(Figure):
         self.area = self.get_area()
 
     def get_area(self):
+        """The function calculates the area of a circle"""
         area = math.pi * self.radius ** 2
         return round(area, 2)
 
     def get_perimeter(self):
+        """The function calculates the perimeter of a sircle"""
         perimeter = 2 * math.pi * self.radius
         return round(perimeter, 2)
-
-
-if __name__ == "__main__":
-    c = Circle(1000)
-    print(c.name)
-    print(c.perimeter)
-    print(c.area)
